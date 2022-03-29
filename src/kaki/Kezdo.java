@@ -12,10 +12,11 @@ public class Kezdo extends Jatekos{
         this.toString();
         super.lep();
         if (asztal.getKor() % 2 == 0){
-            System.out.println("passzol");
+            asztal.emel(1.0);
+            System.out.println(this.toString() + ", emelt 1-el");
         }
         else{
-            asztal.emel(1.0);
+            System.out.println(this.toString() + ", passzolt");
         }
     }
 }

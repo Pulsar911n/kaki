@@ -1,13 +1,13 @@
 package kaki;
 
-public class Jatekos {
+public abstract class Jatekos {
     protected Asztal asztal;
-
     public void setAsztal(Asztal a){
         this.asztal = a;
     }
     public void lep(){
-        System.out.println("Kör: " + asztal.getKor() + ", Tét:" + asztal.getTet());
+        System.out.println("Kor: " + asztal.getKor() + ", Tet:" + asztal.getTet());
     }
+
 
 }
