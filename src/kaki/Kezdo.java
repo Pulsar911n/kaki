@@ -18,5 +18,6 @@ public class Kezdo extends Jatekos{
         else{
             System.out.println(this.toString() + ", passzolt");
         }
+        super.kiLepett(nev);
     }
 }

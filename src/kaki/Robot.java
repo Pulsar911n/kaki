@@ -13,5 +13,6 @@ public class Robot extends Jatekos{
     }
     public void lep(){
         System.out.println(this.toSrting() + ": " + "passzolt");
+        super.kiLepett("Robot" + id);
     }
 }

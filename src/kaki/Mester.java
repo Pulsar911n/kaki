@@ -12,5 +12,6 @@ public class Mester extends Jatekos{
         double sajattet = asztal.getTet() / 100 * fokozat;
         asztal.emel(sajattet);
         System.out.println(this.toString() + ", emelt: " + sajattet);
+        super.kiLepett("Mester");
     }
 }

@@ -5,7 +5,9 @@ public class Asztal {
     private double tet;
     private int kor;
     private double goal;
-
+    protected String kiLepettEppen;
+    public void setKiLepettEppen(String b){ kiLepettEppen = b;}
+    public String getKiLepettEppen(){return kiLepettEppen;}
 
     public Asztal(double tet, int kor, double goal){
         this.tet = tet;
@@ -38,7 +40,7 @@ public class Asztal {
             i.lep();
 
         }
-        System.out.println("Kor vege, aktualis tet: " + tet);
+        System.out.println("Kor vege, aktualis tet: " + String.format("%.2f", tet));
         if (tet > goal){
             this.ujJatek();
             throw new Exception();

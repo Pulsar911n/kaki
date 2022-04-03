@@ -17,5 +17,6 @@ public class Nyuszi extends Jatekos{
         else{
             System.out.println(this.toString() + ", Huha!");
         }
+        super.kiLepett("Nyuszi");
     }
 }

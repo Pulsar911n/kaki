@@ -8,18 +8,20 @@ public class Main {
         Robot r2 = new Robot();
         Mester csen = new Mester(10);
         Nyuszi ny1 = new Nyuszi("kek");
+        Ember en = new Ember();
 
         kerekasztal.addJatekos(kezdo);
         kerekasztal.addJatekos(r1);
         kerekasztal.addJatekos(r2);
         kerekasztal.addJatekos(csen);
         kerekasztal.addJatekos(ny1);
+        kerekasztal.addJatekos(en);
         try {
             for (int i = 0; i < 10; i++) {
                 kerekasztal.kor();
             }
         }catch (Exception e){
-            System.out.println("Jatek vege");
+            System.out.println("Jatek vege, győztes: " + kerekasztal.getKiLepettEppen());
         }
 
 
