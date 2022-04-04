@@ -36,6 +36,7 @@ public class Asztal {
     }
     public void kor() throws Exception{
         System.out.println("Hatar:" + goal);
+        System.out.println("Kor: " + this.getKor() + ", Tet:" + this.getTet());
         for (Jatekos i: jatekosok){
             i.lep();
 

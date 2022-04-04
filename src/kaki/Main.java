@@ -3,12 +3,12 @@ package kaki;
 public class Main {
     public static void main(String[] args) {
         Asztal kerekasztal = new Asztal(2.0,1,60.0);
-        Kezdo kezdo = new Kezdo("Bela");
-        Robot r1 = new Robot();
-        Robot r2 = new Robot();
-        Mester csen = new Mester(10);
-        Nyuszi ny1 = new Nyuszi("kek");
-        Ember en = new Ember();
+        Kezdo kezdo = new Kezdo("Bela", 'A', 'Q');
+        Robot r1 = new Robot('3', '5');
+        Robot r2 = new Robot('A', 'J');
+        Mester csen = new Mester(10, 'K', 'J');
+        Nyuszi ny1 = new Nyuszi("kek", '2', 'A');
+        Ember en = new Ember('6', 'K');
 
         kerekasztal.addJatekos(kezdo);
         kerekasztal.addJatekos(r1);
